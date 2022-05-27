@@ -41,5 +41,5 @@ Pandeiro Contemporânea 10'' 83LT Light Pele Nylon (170,00)
 1. Vendas (carrinho, qtd, etc.)
 2. Cliente (no login ADM)		– WEBER (tbm os index diferente)
 3. Login (ADM / Cli com os index)
-4. Funcionários (table parecida com a do estoque) 
+4. Funcionários (table parecida com a do estoque) Murilo
 5. Descrição Prod. (desc. imgs) - Daniel 
