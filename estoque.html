@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="images\undergroundLogo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&family=Sacramento&family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Underground Instrumentos Musicais</title>
+</head>
+<body>
+    <div class="containerHeader">
+        <header>
+            <center><img src="images\undergroundLogo.jpg" id="logo"></center>
+            <nav>
+                <ul>
+                    <li><a href="estoque.html">ESTOQUE</a></li>
+                    <li><a href="sobre.html">SOBRE NÓS</a></li>
+                    <li><a href="index.html">PRODUTOS</a></li>
+                    <li><a href="vendas.html"><img src="images\shopping-cart.png" id="carrinho"></a><div id="contProd">0</div></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="tableProdutos">
+        <h2>Produtos em Estoque</h2>
+        <label>Filtrar</label><br>
+        <input type="text"placeholder="Digine o nome do produto para buscar"><br>
+        <input type="submit" value="Filtrar" onclick="alertFiltro()">
+        <table>
+            <tr>
+                <th>Nome Produto</th>
+                <th>Marca</th>
+                <th>Valor</th>
+                <th>Qtd. Estoque</th>
+                <th>Editar</th>
+                <th>Excluir</th>
+            </tr>
+            <tr>
+                <td class="tdProd">Piano Digital P-45</td>
+                <td>Yamaha</td>
+                <td>R$ 4.500,00</td>
+                <td>3</td>
+                <td class="tdBtn"><button onclick="editarProd()">Editar</button></td>
+                <td class="tdBtn"><button onclick="deleteProd()" class="delBtn">X</button></td>
+            </tr>
+            <tr>
+                <td class="tdProd">Violão Clássico C40MII Acústico</td>
+                <td>Yamaha</td>
+                <td>R$ 750,00</td>
+                <td>3</td>
+                <td class="tdBtn"><button onclick="editarProd()">Editar</button></td>
+                <td class="tdBtn"><button onclick="deleteProd()" class="delBtn">X</button></td>
+            </tr>
+            <tr>
+                <td class="tdProd">Guitarra Stratocaster GM217N</td>
+                <td>Michael</td>
+                <td>R$ 945,00</td>
+                <td>25</td>
+                <td class="tdBtn"><button onclick="editarProd()">Editar</button></td>
+                <td class="tdBtn"><button onclick="deleteProd()" class="delBtn">X</button></td>
+            </tr>
+            <tr>
+                <td class="tdProd">Violino Mozart Mo44 4/4</td>
+                <td>Vivace</td>
+                <td>R$ 459,99</td>
+                <td>9</td>
+                <td class="tdBtn"><button onclick="editarProd()">Editar</button></td>
+                <td class="tdBtn"><button onclick="deleteProd()" class="delBtn">X</button></td>
+            </tr>
+            <tr>
+                <td class="tdProd">Teclado PSR-F52 61 Teclas</td>
+                <td>Yamaha</td>
+                <td>R$ 780,00</td>
+                <td>6</td>
+                <td class="tdBtn"><button onclick="editarProd()">Editar</button></td>
+                <td class="tdBtn"><button onclick="deleteProd()" class="delBtn">X</button></td>
+            </tr>
+            <tr>
+                <td class="tdProd">Bateria Acústica DX722 Bumbo 22"</td>
+                <td>Premium</td>
+                <td>R$ 2.100,00</td>
+                <td>3</td>
+                <td class="tdBtn"><button onclick="editarProd()">Editar</button></td>
+                <td class="tdBtn"><button onclick="deleteProd()" class="delBtn">X</button></td>
+            </tr>
+            <tr>
+                <td class="tdProd">Ukulele Soprano UK-06S MGS Acústico</td>
+                <td>Strinberg</td>
+                <td>R$ 270,00</td>
+                <td>3</td>
+                <td class="tdBtn"><button onclick="editarProd()">Editar</button></td>
+                <td class="tdBtn"><button onclick="deleteProd()" class="delBtn">X</button></td>
+            </tr>
+            <tr>
+                <td class="tdProd">Flauta Doce Soprano YRS-314BIII</td>
+                <td>Yamaha</td>
+                <td>R$ 230,00</td>
+                <td>20</td>
+                <td class="tdBtn"><button onclick="editarProd()">Editar</button></td>
+                <td class="tdBtn"><button onclick="deleteProd()" class="delBtn">X</button></td>
+            </tr>
+            <tr>
+                <td class="tdProd">Tamborim 6" Light 205LT com Baqueta</td>
+                <td>Contemporânea</td>
+                <td>R$ 69,00</td>
+                <td>20</td>
+                <td class="tdBtn"><button onclick="editarProd()">Editar</button></td>
+                <td class="tdBtn"><button onclick="deleteProd()" class="delBtn">X</button></td>
+            </tr>
+            <tr>
+                <td class="tdProd">Gaita de Boca Diatônica</td>
+                <td>Hering Blues</td>
+                <td>R$ 100,00</td>
+                <td>20</td>
+                <td class="tdBtn"><button onclick="editarProd()">Editar</button></td>
+                <td class="tdBtn"><button onclick="deleteProd()" class="delBtn">X</button></td>
+            </tr>
+            <tr>
+                <td class="tdProd">Pandeiro 10" 83LT Light Pele Nylon</td>
+                <td>Contemporânea</td>
+                <td>R$ 170,00</td>
+                <td>20</td>
+                <td class="tdBtn"><button onclick="editarProd()">Editar</button></td>
+                <td class="tdBtn"><button onclick="deleteProd()" class="delBtn">X</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <div class="containerForm">
+        <h2>Inclusão de Produto na tabela</h2>
+        <form>
+            <label for="prod">Modelo</label><br>
+            <input type="text" id="prod" name="produto" placeholder="Digite o instrumento e modelo..."><br>
+
+            <label for="marca">Marca</label><br>
+            <input type="text" id="marca" name="marca" placeholder="Digite a marca do produto..."><br>
+          
+            <label for="valor">Valor R$</label><br>
+            <input type="text" id="valor" name="valor" placeholder="Digite o valor do produto..."><br>
+
+            <label for="qtd">Quantidade em Estoque</label><br>
+            <input type="text" id="qtd" name="qtd" placeholder="Digite a quantidade disponível..."><br>
+
+            <input type="submit" value="Incluir" id="btnIncluir" onclick="includeProd()">
+        </form>
+    </div>
+    
+    <footer>
+        <div id="containerFooter">
+            <img src="images\undergroundLogo.jpg" id="logoFooter">
+            <center>
+               <p>Underground Instrumentos | Av. Nereu Ramos, 1090-D | Chapecó, SC</p>
+                <p>Todos os direitos reservados &reg;2022</p> 
+            </center>         
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        function deleteProd() {
+            alert("Produto deletado!");
+        }
+
+        function editarProd() {
+            window.location.href = "edicao.html";
+        }
+        
+        function includeProd() {
+            alert("Produto adicionado!");
+        }
+
+        function alertFiltro() {
+            alert("Busca realizada.");
+        }
+
+    </script>
+
+</body>
+</html>

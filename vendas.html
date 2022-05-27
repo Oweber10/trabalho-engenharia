@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="images\undergroundLogo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&family=Sacramento&family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+	<title>Underground Instrumentos Musicais</title>
+</head>
+<body>
+	<div class="containerHeader">
+        <header>
+            <center><img src="images\undergroundLogo.jpg" id="logo"></center>
+            <nav>
+                <ul>
+                    <li><a href="estoque.html">ESTOQUE</a></li>
+                    <li><a href="sobre.html">SOBRE NÓS</a></li>
+                    <li><a href="index.html">PRODUTOS</a></li>
+                    <li><a href="vendas.html"><img src="images\shopping-cart.png" id="carrinho"></a><div id="contProd">0</div></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="containerForm">
+        <h2>Seus Produtos ;)</h2>
+        <table class="tableCompra">
+            <tr>
+                <th></th>
+                <th>Produto</th>
+                <th>Valor R$</th>
+                <th>Quantidade</th>
+            </tr>
+            <tr>
+                <td>1. </td>
+                <td>Ukulele</td>
+                <td>270,00</td>
+                <td>1</td>
+            </tr>
+            <tr>
+                <td>2. </td>
+                <td>Exemplo 2</td>
+                <td>20,00</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>1. </td>
+                <td>Exemplo 3</td>
+                <td>10,00</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td> - </td>
+                <td>Total</td>
+                <td>360,00</td>
+                <td> - </td>
+            </tr>
+        </table>
+
+        <form>
+            <label>Calcular Frete</label><br>
+            <input type="text"placeholder="Digite o seu CEP para calcular"><br>
+            <input type="submit" value="Calcular" onclick="alertFrete()"><br><br><br>
+        </form>
+        
+        <form>
+            <label>Forma de Pagamento</label><br><br>
+            <input type="radio" name="formaPag" id="carDeb">
+            <label for="carDeb">Cartão de Débito</label><br>
+            <input type="radio" name="formaPag" id="carCred">
+            <label for="carCred">Cartão de Crédito</label><br>
+            <input type="radio" name="formaPag" id="boleto">
+            <label for="boleto">Boleto Bancário</label><br>
+            <input type="radio" name="formaPag" id="PIX">
+            <label for="PIX">PIX</label><br>
+            <input type="submit" name="formaPag" value="Finalizar Pagamento" onclick="alertPagamento()">
+        </form>
+        
+    </div>
+    
+    <footer>
+        <div id="containerFooter">
+            <img src="images\undergroundLogo.jpg" id="logoFooter">
+            <center>
+               <p>Underground Instrumentos | Av. Nereu Ramos, 1090-D | Chapecó, SC</p>
+                <p>Todos os direitos reservados &reg;2022</p> 
+            </center>         
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        function alertFrete() {
+            alert("Frete calculado!");
+        }
+        function alertPagamento() {
+            alert("Compra finalizada!");
+        }
+    </script>
+
+</body>
+</html>
