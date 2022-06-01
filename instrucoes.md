@@ -21,8 +21,8 @@ Gaita de Boca Diatônica Hering Blues (100,00)
 Pandeiro Contemporânea 10'' 83LT Light Pele Nylon (170,00)
 
 
-1. Vendas (carrinho, qtd, etc.)
-2. Cliente (no login ADM)		– WEBER (tbm os index diferente)
-3. Login (ADM / Cli com os index)
-4. Funcionários (table parecida com a do estoque) Murilo
-5. Descrição Prod. (desc. imgs) - Daniel
+1. Vendas (carrinho, qtd, etc.)                     - <<SEI LÁ TAMBÉM NESSA CARALHA>>
+2. Cliente (no login ADM)		                    – WEBER (tbm os index diferente)
+3. Login (ADM / Cli com os index)                   - DAVI
+4. Funcionários (table parecida com a do estoque)   - MURILO
+5. Descrição Prod. (desc. imgs)                     - DANIEL
