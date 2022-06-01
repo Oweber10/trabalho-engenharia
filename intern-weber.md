@@ -20,3 +20,6 @@ function saudacao(obj) {
     document.getElementById("saudacao").innerHTML = '<span style="vertical-align: middle;">' + txt + '</span>' + variavelFoto;
 
 }
+
+
+TESTE N DEVE APARECER NO GIT AGR    
