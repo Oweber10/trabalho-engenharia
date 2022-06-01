@@ -1,20 +1,3 @@
-Tarefas a fazer:
-
-DIVs e botões produtos: Hiury
-
-Funcionalidade Carrinho de Compra: Daniel
-
-Encontrar imagens e alimentar a tabela com dados sem shitposting: Murilo
-
-Editar e Excluir Estoque: Weber
-
-Incluir itens na tabela do estoque: Davi
-
-Deixar bonito: Todo mundo, depois
-
-
-
-
 Instrumentos
 
 Violão Clássico Yamaha C40MII Acústico (750,00)
