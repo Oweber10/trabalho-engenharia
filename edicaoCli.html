@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="images\undergroundLogo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&family=Sacramento&family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+	<title>Underground Instrumentos Musicais</title>
+</head>
+<body>
+
+	<div class="containerHeader">
+        <header>
+            <center><img src="images\undergroundLogo.jpg" id="logo"></center>
+            <nav>
+                <ul>
+                    <li><a href="estoque.html">ESTOQUE</a></li>
+                    <li><a href="sobre.html">SOBRE NÓS</a></li>
+                    <li><a href="index.html">PRODUTOS</a></li>
+                    <li><a href="vendas.html"><img src="images\shopping-cart.png" id="carrinho"></a><div id="contProd">0</div></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+	<div class="containerForm">
+		<button onclick="returnListaCli()" class="returnBtn">Voltar</button>
+
+        <h2>Edição de Produto na tabela</h2>
+        <form>
+            <label for="prod">NOME</label><br>
+            <input type="text" id="prod" name="produto" placeholder="Digite o novo nome"><br>
+
+            <label for="marca">CPF</label><br>
+            <input type="text" id="marca" name="marca" placeholder="Digite o novo CPF"><br>
+          
+            <label for="valor">Telefone</label><br>
+            <input type="text" id="valor" name="valor" placeholder="Digite o novo telefone"><br>
+
+            <label for="qtd">Codigo do cliente</label><br>
+            <input type="text" id="qtd" name="qtd" placeholder="Digite o novo codigo de cliente"><br>
+
+            <input type="submit" value="Editar" id="btnIncluir" onclick="editCli()">
+        </form>
+    </div>
+
+    <footer>
+        <div id="containerFooter">
+            <img src="images\undergroundLogo.jpg" id="logoFooter">
+            <center>
+               <p>Underground Instrumentos | Av. Nereu Ramos, 1090-D | Chapecó, SC</p>
+                <p>Todos os direitos reservados &reg;2022</p> 
+            </center>         
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+    	function returnListaCli() {
+    		window.location.href = "listaClientes.html";
+    	}
+
+    	function editCli() {
+    		alert("Cliente alterado");
+    	}
+    </script>
+
+</body>
+</html>

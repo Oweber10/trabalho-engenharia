@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="imagex/png" href="images\undergroundLogo.jpg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&family=Sacramento&family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap"
+        rel="stylesheet">
+    <title>Underground Instrumentos Musicais</title>
+</head>
+
+<body>
+    <div class="containerHeader">
+        <header>
+            <center><img src="images\undergroundLogo.jpg" id="logo"></center>
+            <nav>
+                <ul>
+                    <li><a href="estoque.html">ESTOQUE</a></li>
+                    <li><a href="sobre.html">SOBRE NÓS</a></li>
+                    <li><a href="index.html">PRODUTOS</a></li>
+                    <li><a href="vendas.html"><img src="images\shopping-cart.png" id="carrinho"></a>
+                        <div id="contProd">0</div>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+
+    <div class="tableProdutos">
+        <h2>Produtos em Estoque</h2>
+        <label>Filtrar</label><br>
+        <input type="text" placeholder="Busque por Nome, CPF ou codigo do cliente"><br>
+        <input type="submit" value="Filtrar" onclick="alertFiltro()">
+        <table>
+            <tr>
+                <th>Nome Cliente</th>
+                <th>CPF</th>
+                <th>Cod</th>
+                <th>Editar</th>
+                <th>Excluir</th>
+            </tr>
+            <tr>
+                <td class="tdProd">GABRIEL WEBER</td>
+                <td>666.666.666-66</td>
+                <td>2345678</td>
+                <td class="tdBtn"><button onclick="editarCli()">Editar</button></td>
+                <td class="tdBtn"><button onclick="deleteCli()" class="delBtn">X</button></td>
+            </tr>
+            <tr>
+                <td class="tdProd">HIURY TRESSOLDI</td>
+                <td>222.222.222-22</td>
+                <td>3456789</td>
+                <td class="tdBtn"><button onclick="editarCli()">Editar</button></td>
+                <td class="tdBtn"><button onclick="deleteCli()" class="delBtn">X</button></td>
+            </tr>            <tr>
+                <td class="tdProd">DANIEL KOSVOSKI</td>
+                <td>333.333.333-33</td>
+                <td>4567890</td>
+                <td class="tdBtn"><button onclick="editarCli()">Editar</button></td>
+                <td class="tdBtn"><button onclick="deleteCli()" class="delBtn">X</button></td>
+            </tr>            <tr>
+                <td class="tdProd">MURILO VIZZOTO</td>
+                <td>444.444.444-44</td>
+                <td>5678901</td>
+                <td class="tdBtn"><button onclick="editarCli()">Editar</button></td>
+                <td class="tdBtn"><button onclick="deleteCli()" class="delBtn">X</button></td>
+            </tr>            <tr>
+                <td class="tdProd">JOAO PEDRO PEREIRA</td>
+                <td>555.555.555-55</td>
+                <td>6789012</td>
+                <td class="tdBtn"><button onclick="editarCli()">Editar</button></td>
+                <td class="tdBtn"><button onclick="deleteCli()" class="delBtn">X</button></td>
+            </tr>            <tr>
+                <td class="tdProd">JOAO ELIAS BUCHELE</td>
+                <td>111.111.111-11</td>
+                <td>7890123</td>
+                <td class="tdBtn"><button onclick="editarCli()">Editar</button></td>
+                <td class="tdBtn"><button onclick="deleteCli()" class="delBtn">X</button></td>
+            </tr>            <tr>
+                <td class="tdProd">ISADORA GONSALES</td>
+                <td>777.777.777-77</td>
+                <td>8901234</td>
+                <td class="tdBtn"><button onclick="editarCli()">Editar</button></td>
+                <td class="tdBtn"><button onclick="deleteCli()" class="delBtn">X</button></td>
+            </tr>
+        </tr>            <tr>
+            <td class="tdProd">MATHEUS MENEZES</td>
+            <td>888.888.888-88</td>
+            <td>9012345</td>
+            <td class="tdBtn"><button onclick="editarCli()">Editar</button></td>
+            <td class="tdBtn"><button onclick="deleteCli()" class="delBtn">X</button></td>
+        </tr>
+        </table>
+    </div>
+
+    <div class="containerForm">
+        <h2>Inclusão de Cliente Manual</h2>
+        <form>
+            <label for="prod">NOME COMPLETO</label><br>
+            <input type="text" id="prod" name="produto" placeholder="Digite nome do Cliente"><br>
+
+            <label for="marca">CPF</label><br>
+            <input type="text" id="marca" name="marca" placeholder="Digite o CPF do Cliente"><br>
+
+            <label for="valor">Fone</label><br>
+            <input type="text" id="valor" name="valor" placeholder="Digite telefone do Cliente"><br>
+
+            <input type="submit" value="Incluir" id="btnIncluir" onclick="includeCli()">
+        </form>
+    </div>
+
+    <footer>
+        <div id="containerFooter">
+            <img src="images\undergroundLogo.jpg" id="logoFooter">
+            <center>
+                <p>Underground Instrumentos | Av. Nereu Ramos, 1090-D | Chapecó, SC</p>
+                <p>Todos os direitos reservados &reg;2022</p>
+            </center>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        function deleteCli() {
+            alert("Cliente deletado!");
+        }
+
+        function editarCli() {
+            window.location.href = "edicaoCli.html";
+        }
+
+        function includeCli() {
+            alert("Cliente adicionado!");
+        }
+
+        function alertFiltro() {
+            alert("Busca realizada.");
+        }
+
+    </script>
+
+</body>
+
+</html>
