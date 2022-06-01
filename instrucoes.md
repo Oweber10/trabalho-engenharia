@@ -1,3 +1,6 @@
+SE TU QUISER CRIAR ALGUM ARQUIVO E NÃO QUER QUE ELE SEJA ENVIADO PRO GIT, COLOCA "intern" NO NOME OU COLOCA O NOME DO ARQUIVO EM .gitignore.txt
+
+
 Instrumentos
 
 Violão Clássico Yamaha C40MII Acústico (750,00)
