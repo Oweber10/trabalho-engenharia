@@ -277,3 +277,150 @@ footer{
 	height: 6rem;
 	float: left;
 }
+
+
+#detalhes {
+	width: 35%;
+	background-color: red;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+* {box-sizing:border-box}
+
+
+.slideshow-container {
+   border-radius: 5px;
+  border: 1px solid red;
+  background-color: #ffffff;
+  padding: 20px;
+  width: 750px;
+  margin-top: 2rem;
+  margin-left: 2rem;
+	max-width: 750px;
+	float: left;
+}
+
+.mySlides {
+display: none;
+}
+
+
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+margin-top: -22px;
+padding: 16px;
+color: white;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+
+
+.next {
+right: 0;
+margin-right: 60%;
+border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+background-color: rgba(0,0,0,0.8);
+}
+
+
+.text {
+color: #f2f2f2;
+font-size: 15px;
+padding: 8px 12px;
+position: absolute;
+bottom: 8px;
+width: 100%;
+text-align: center;
+}
+
+
+.numbertext {
+color: #f2f2f2;
+font-size: 12px;
+padding: 8px 12px;
+position: absolute;
+top: 0;
+}
+
+
+.fade {
+animation-name: fade;
+animation-duration: 1.5s;
+}
+
+@keyframes fade {
+from {opacity: .4}
+to {opacity: 1}
+}
+
+.description{
+  border-radius: 5px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	width: 50%;
+	margin-left: 3rem;
+	margin-right: 3rem;
+	margin-top: 2rem;	
+	align-content: right;
+	float: right;
+}
+
+#quantidade{
+  width: 14%;
+  height: 45px;
+  margin: 8px 0;
+  margin-left: 7%;
+}
+
+#comprar{
+  width: 35%;
+	background-color: red;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	margin-right: 3rem;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	float: right;
+}
+
+.cepDetalhes input[type=text], select{
+	  clear: both;
+	  width: 50%;
+	  padding: 12px 20px;
+	  margin: 5px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  border-radius: 4px;
+	  box-sizing: border-box;
+	  margin-bottom: 2rem;
+	  margin-left: 7%;
+
+}
+.freteDetalhes input[type=submit]{
+  clear: both;
+  width: 50%;
+	background-color: red;
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  margin-left: 7%;
+}
