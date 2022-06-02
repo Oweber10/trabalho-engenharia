@@ -102,4 +102,19 @@
     </form>
     </div>
 
+    <script type="text/javascript">
+        let contProd = 0;
+
+        function alertCarrinho() {
+            alert("Item adicionado ao carrinho de compras");
+            contProd++;
+            console.log(contProd);
+            document.getElementById('contProd').innerHTML = contProd;
+        }
+
+        function alertFrete() {
+            alert("Frete calculado!");
+        }
+    </script>
+
 </div>
