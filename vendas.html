@@ -29,33 +29,49 @@
         <table class="tableCompra">
             <tr>
                 <th></th>
+                <th></th>
                 <th>Produto</th>
                 <th>Valor R$</th>
                 <th>Quantidade</th>
+                <th>Remover</th>
             </tr>
             <tr>
                 <td>1. </td>
-                <td>Ukulele</td>
+                <td><img src="images\ukulele.jpg" class="imagesCarrinho"></td>
+                <td>Ukulele Soprano UK-06S MGS Acústico</td>
                 <td>270,00</td>
-                <td>1</td>
+                <td>
+                    <input type="number" name="" value="1" min="1">
+                </td>
+                <td class="tdBtn"><button onclick="deleteProd()" class="delBtn">X</button></td>
             </tr>
             <tr>
                 <td>2. </td>
-                <td>Exemplo 2</td>
-                <td>20,00</td>
-                <td>2</td>
+                <td><img src="images\guitarra.jpg" class="imagesCarrinho"></td>
+                <td>Guitarra Stratocaster GM217N</td>
+                <td>945,00</td>
+                <td>
+                    <input type="number" name="" value="1" min="1">
+                </td>
+                <td class="tdBtn"><button onclick="deleteProd()" class="delBtn">X</button></td>
             </tr>
             <tr>
                 <td>1. </td>
-                <td>Exemplo 3</td>
-                <td>10,00</td>
-                <td>5</td>
+                <td><img src="images\violino.jpg" class="imagesCarrinho"></td>
+                <td>Violino Mozart Mo44 4/4</td>
+                <td>459,99</td>
+                <td>
+                    <input type="number" name="" value="1" min="1">
+                </td>
+                <td class="tdBtn"><button onclick="deleteProd()" class="delBtn">X</button></td>
             </tr>
             <tr>
-                <td> - </td>
                 <td>Total</td>
-                <td>360,00</td>
                 <td> - </td>
+                <td> - </td>
+                <td>R$ 1674,99</td>
+                <td> - </td>
+                <td></td>
             </tr>
         </table>
 
@@ -96,6 +112,10 @@
         }
         function alertPagamento() {
             alert("Compra finalizada!");
+        }
+
+        function deleteProd() {
+            alert("Produto removido!");
         }
     </script>
 
