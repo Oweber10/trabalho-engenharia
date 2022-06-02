@@ -424,3 +424,15 @@ to {opacity: 1}
 	cursor: pointer;
   margin-left: 7%;
 }
+
+#editarDetalhes{
+	clear: both;
+  	width: 50%;	
+	background-color: blue;
+	color: white;
+	padding: 14px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+  margin-left: 7%;
+}
