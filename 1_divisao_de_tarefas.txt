@@ -1,0 +1,9 @@
+
+   +----------------------------------------------------+------------------------------------+-------+
+   |                     TAREFA                         |            ENCARREGADO             |STATUS |
+   | 1. Vendas (carrinho, qtd, etc.)                    |- HIURY                             |  OK   |
+   | 2. Cliente (no login ADM)		                    |– WEBER                             |  OK   |
+   | 3. Login (ADM / Cli com os index)                  |- DAVI (feito por weber)            |  OK   |
+   | 4. Funcionários (table parecida com a do estoque)  |- MURILO                            |  OK   |
+   | 5. Descrição Prod. (desc. imgs)                    |- DANIEL                            |  OK   |
+   +----------------------------------------------------+------------------------------------+-------+

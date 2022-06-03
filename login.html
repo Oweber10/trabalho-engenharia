@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UNDERGROUND INSTRUMENTOS</title>
+    <meta charset="UTF-8" />
+    <link href="login.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images\undergroundLogo.jpg" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+  </head>
+  <body>
+    <div id="centralizar">
+    <header class="flex-container">
+      <nav>
+        <a></a>
+      </nav>
+      <a href="index.html"
+        ><img src="images\undergroundLogo.jpg" id="logo" style="width: 10%;"
+      /></a>
+    </header>
+    <div class="container">
+      <div class="card">
+        <image src="login.png" id="enter" />
+        <label>Informe seu E-mail</label>
+        <input type="email" placeholder="exemplo@abc.com" id="email" />
+        <label>Insira a sua Senha</label>
+        <input type="password" placeholder="Senha" />
+        <div id="registre">
+          <h5>Não possui conta?</h5>
+          <a href="signup.html" class="button">Resgistre-se</a>
+        </div>
+
+        <button type="button" onclick="Verify()">Entrar</button>
+      </div>
+    </div>
+    <div id="snackbar">Não Deixe o Campo de Email Vazio</div>
+    <script src="login.js"></script>
+    <script src="snackbar.js"></script>
+    </div>
+  </body>
+</html>
