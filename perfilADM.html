@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
+
 <head>
-	<meta charset="UTF-8">
+    <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet">
     <link rel="shortcut icon" type="imagex/png" href="images\electric-guitar.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&family=Sacramento&family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
-	<title>Underground Instrumentos Musicais</title>
+    <title>Underground Instrumentos Musicais</title>
 </head>
-<body>
 
-	<div class="containerHeader">
+<body>
+    <div class="containerHeader">
         <center><img src="images\undergroundLogo.jpg" id="logo"></center>
         <header class="headerCliente">
             <nav>
@@ -31,27 +32,20 @@
         </header>
     </div>
 
-	<div class="containerForm">
-		<button onclick="returnEstoque()" class="returnBtn">Voltar</button>
-
-        <h2>Edição de Produto na tabela</h2>
-        <form>
-            <label for="prod">Modelo</label><br>
-            <input type="text" id="prod" name="produto" placeholder="Digite o instrumento e modelo..."><br>
-
-            <label for="marca">Marca</label><br>
-            <input type="text" id="marca" name="marca" placeholder="Digite a marca do produto..."><br>
-          
-            <label for="valor">Valor R$</label><br>
-            <input type="text" id="valor" name="valor" placeholder="Digite o valor do produto..."><br>
-
-            <label for="qtd">Quantidade em Estoque</label><br>
-            <input type="text" id="qtd" name="qtd" placeholder="Digite a quantidade disponível..."><br>
-
-            <input type="submit" value="Editar" id="btnIncluir" onclick="editProd()">
-        </form>
-    </div>
-
+    <div class="perfil">
+        <h2>Perfil do Administrador</h2>
+        <img src="images\user.png" id="imgPerfil">
+        <div id="dados">
+            <h3>Nome: Cauê Borges</h3>
+            <h3>Cidade: Chapecó</h3>
+            <h3>Estado: SC</h3>
+            <h3>Endereço: Av. Getúlio Vargas, 540-D</h3>
+            <h3>E-mail: adm@underground.com</h3>
+            <h3>Salário: R$ 5.600,00</h3>
+        </div>
+        <input type="submit" value="Alterar Dados" onclick="editPerfil()">
+    </div>        
+    
     <footer>
         <div id="containerFooter">
             <img src="images\undergroundLogo.jpg" id="logoFooter">
@@ -63,14 +57,9 @@
     </footer>
 
     <script type="text/javascript">
-    	function returnEstoque() {
-    		window.location.href = "estoque.html";
-    	}
-
-    	function editProd() {
-    		alert("Produto alterado");
-    	}
+        function editPerfil() {
+            location.replace("edicaoADM.html");
+        }
     </script>
-
 </body>
 </html>

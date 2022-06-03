@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link href="style.css" rel="stylesheet">
-    <link rel="shortcut icon" type="imagex/png" href="images\undergroundLogo.jpg">
+    <link rel="shortcut icon" type="imagex/png" href="images\electric-guitar.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;900&family=Sacramento&family=Source+Code+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
@@ -15,115 +15,128 @@
     <div class="containerHeader">
         <header>
             <center><img src="images\undergroundLogo.jpg" id="logo"></center>
-            <div class="login" style="clear: both; float: right; padding-right: 3%; margin-top: -2%;"><a href="login.html">LOGIN</a></div>
-            <nav>
+            <nav class="navLogOut">
                 <ul>
-                    <li><a href="estoque.html">ESTOQUE</a></li>
                     <li><a href="sobre.html">SOBRE NÓS</a></li>
                     <li><a href="index.html">PRODUTOS</a></li>
                     <li><a href="vendas.html"><img src="images\shopping-cart.png" id="carrinho"></a><div id="contProd">0</div></li>
+                    <li><a href="login.html">Login</a></li>
                 </ul>
             </nav>
         </header>
     </div>
 
     <div id="title">
-        <img src="images\pianoSilhueta.png" id="pianoImg">
-        <h1>Undergorund Instrumentos Musicais</h1>
+        <img src="images\bannerUnderground.png" id="banner">
+        <div id="stripContato">
+            <img src="images\whatsapp.png"><h3 style="margin-right: 2rem;">(49)99999-9999</h3>
+            <img src="images\instagram.png"><h3>@underground.ofc</h3>
+        </div>
     </div>
 
     <div class="containerVendas">
 
         <h2>Lista de Produtos</h2>
 
+        <label>Filtrar por marca: </label>
+        <select>
+            <option>Todas</option>
+            <option>Yamaha</option>
+            <option>Michael</option>
+            <option>Vivace</option>
+            <option>Strinberg</option>
+            <option>Premium</option>
+            <option>Contemporânea</option>
+            <option>Hering Blues</option>
+        </select>
         <div id="flexBox">
 
             <div class="containerProd">
                 <img src="images\pianoDig.jpg" width="100%">
                 <h3>Piano Digital P-45</h3>
                 <h4>R$ 4.500,00</h4>
-                <a href="piano.html" id="detalhes" style="text-decoration:none">Detalhes</a></li>
-                <input type="submit" value="Comprar" onclick="alertCarrinho()">
+                <input type="submit" value="Adicionar ao carrinho" onclick="alertCarrinho()" class="btnVenda">
+                <a href="piano.html"><input type="submit" value="Detalhes" class="btnVenda"></a>
             </div>
 
             <div class="containerProd">
                 <img src="images\violao.jpg" width="100%">
                 <h3>Violão Clássico C40MII</h3>
                 <h4>R$ 750,00</h4>
-                <a href="piano.html" id="detalhes" style="text-decoration:none">Detalhes</a></li>
-                <input type="submit" value="Comprar" onclick="alertCarrinho()">
+                <input type="submit" value="Adicionar ao carrinho" onclick="alertCarrinho()" class="btnVenda">
+                <a href="piano.html"><input type="submit" value="Detalhes" class="btnVenda"></a>
             </div>
 
             <div class="containerProd">
                 <img src="images\guitarra.jpg" width="100%">
                 <h3>Guitarra Stratocaster GM217N</h3>
                 <h4>R$ 945,00</h4>
-                <a href="piano.html" id="detalhes" style="text-decoration:none">Detalhes</a></li>
-                <input type="submit" value="Comprar" onclick="alertCarrinho()">
+                <input type="submit" value="Adicionar ao carrinho" onclick="alertCarrinho()" class="btnVenda">
+                <a href="piano.html"><input type="submit" value="Detalhes" class="btnVenda"></a>
             </div>
 
             <div class="containerProd">
                 <img src="images\violino.jpg" width="100%">
                 <h3>Violino Mozart Mo44 4/4</h3>
                 <h4>R$ 459,99</h4>
-                <a href="piano.html" id="detalhes" style="text-decoration:none">Detalhes</a></li>
-                <input type="submit" value="Comprar" onclick="alertCarrinho()">
+                <input type="submit" value="Adicionar ao carrinho" onclick="alertCarrinho()" class="btnVenda">
+                <a href="piano.html"><input type="submit" value="Detalhes" class="btnVenda"></a>
             </div>
 
             <div class="containerProd">
                 <img src="images\teclado.jpg" width="100%">
                 <h3>Teclado PSR-F52 61 Teclas</h3>
                 <h4>R$ 780,00</h4>
-                <a href="piano.html" id="detalhes" style="text-decoration:none">Detalhes</a></li>
-                <input type="submit" value="Comprar" onclick="alertCarrinho()">
+                <input type="submit" value="Adicionar ao carrinho" onclick="alertCarrinho()" class="btnVenda">
+                <a href="piano.html"><input type="submit" value="Detalhes" class="btnVenda"></a>
             </div>
 
             <div class="containerProd">
                 <img src="images\bateria.jpg" width="100%">
                 <h3>Bateria Acústica DX722 Bumbo 22"</h3>
                 <h4>R$ 2.100,00</h4>
-                <a href="piano.html" id="detalhes" style="text-decoration:none">Detalhes</a></li>
-                <input type="submit" value="Comprar" onclick="alertCarrinho()">
+                <input type="submit" value="Adicionar ao carrinho" onclick="alertCarrinho()" class="btnVenda">
+                <a href="piano.html"><input type="submit" value="Detalhes" class="btnVenda"></a>
             </div>
 
             <div class="containerProd">
                 <img src="images\ukulele.jpg" width="100%">
                 <h3>Ukulele Soprano UK-06S MGS Acústico</h3>
                 <h4>R$ 270,00</h4>
-                <a href="piano.html" id="detalhes" style="text-decoration:none">Detalhes</a></li>
-                <input type="submit" value="Comprar" onclick="alertCarrinho()">
+                <input type="submit" value="Adicionar ao carrinho" onclick="alertCarrinho()" class="btnVenda">
+                <a href="piano.html"><input type="submit" value="Detalhes" class="btnVenda"></a>
             </div>
 
             <div class="containerProd">
                 <img src="images\flauta.jpg" width="100%">
                 <h3>Flauta Doce Soprano YRS-314BIII</h3>
                 <h4>R$ 230,00</h4>
-                <a href="piano.html" id="detalhes" style="text-decoration:none">Detalhes</a></li>
-                <input type="submit" value="Comprar" onclick="alertCarrinho()">
+                <input type="submit" value="Adicionar ao carrinho" onclick="alertCarrinho()" class="btnVenda">
+                <a href="piano.html"><input type="submit" value="Detalhes" class="btnVenda"></a>
             </div>
 
             <div class="containerProd">
                 <img src="images\tamborim.jpg" width="100%">
                 <h3>Tamborim 6" Light 205LT com Baqueta</h3>
                 <h4>R$ 69,00</h4>
-                <a href="piano.html" id="detalhes" style="text-decoration:none">Detalhes</a></li>
-                <input type="submit" value="Comprar" onclick="alertCarrinho()">
+                <input type="submit" value="Adicionar ao carrinho" onclick="alertCarrinho()" class="btnVenda">
+                <a href="piano.html"><input type="submit" value="Detalhes" class="btnVenda"></a>
             </div>
 
             <div class="containerProd">
                 <img src="images\gaita.jpg" width="100%">
                 <h3>Gaita de Boca Diatônica</h3>
                 <h4>R$ 100,00</h4>
-                <a href="piano.html" id="detalhes" style="text-decoration:none">Detalhes</a></li>
-                <input type="submit" value="Comprar" onclick="alertCarrinho()">
+                <input type="submit" value="Adicionar ao carrinho" onclick="alertCarrinho()" class="btnVenda">
+                <a href="piano.html"><input type="submit" value="Detalhes" class="btnVenda"></a>
             </div>
 
             <div class="containerProd">
                 <img src="images\pandeiro.jpg" width="100%">
                 <h3>Pandeiro 10" 83LT Light Pele Nylon</h3>
                 <h4>R$ 170,00</h4>
-                <a href="piano.html" id="detalhes" style="text-decoration:none">Detalhes</a></li>
-                <input type="submit" value="Comprar" onclick="alertCarrinho()">
+                <input type="submit" value="Adicionar ao carrinho" onclick="alertCarrinho()" class="btnVenda">
+                <a href="piano.html"><input type="submit" value="Detalhes" class="btnVenda"></a>
             </div>
         </div>
         

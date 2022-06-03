@@ -1,8 +1,65 @@
-header{
-    clear: both;
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto", sans-serif;
 }
 
-#centralizar{
-    margin-left: auto;
-    text-align: center;
+#containerLogin {
+	width: 100%;
+	margin: auto;
+	position: relative;
+	margin-bottom: 0;
+}
+
+#cardLogin {
+	position: absolute;
+	top: 15%;
+	margin-left: 22rem;
+	background-color: white;
+	border-radius: 5%;
+	width: 35rem;
+	height: 30rem;
+	padding: 25px;
+}
+
+#cadastro {
+	position: absolute;
+	top: 5%;
+	margin-left: 22rem;
+	background-color: white;
+	border-radius: 5%;
+	width: 35rem;
+	height: 45rem;
+	padding: 25px;
+}
+
+h1 {
+	color: darkred;
+	margin-bottom: 4rem;
+}
+
+input[type=text], input[type=email], input[type=password], select {
+	width: 70%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	margin-bottom: 2rem;
+}
+
+input[type=submit] {
+	width: 70%;
+	background-color: red;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+input[type=submit]:hover {
+	background-color: darkred;
 }

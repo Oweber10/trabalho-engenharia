@@ -32,21 +32,21 @@
     </div>
 
 	<div class="containerForm">
-		<button onclick="returnEstoque()" class="returnBtn">Voltar</button>
+		<button onclick="returnFuncionarios()" class="returnBtn">Voltar</button>
 
-        <h2>Edição de Produto na tabela</h2>
+        <h2>Edição de funcionário da tabela</h2>
         <form>
-            <label for="prod">Modelo</label><br>
-            <input type="text" id="prod" name="produto" placeholder="Digite o instrumento e modelo..."><br>
+            <label for="prod">Nome funcionário</label><br>
+            <input type="text" placeholder="Digite o nome do colaborador..."><br>
 
-            <label for="marca">Marca</label><br>
-            <input type="text" id="marca" name="marca" placeholder="Digite a marca do produto..."><br>
+            <label for="marca">Função</label><br>
+            <input type="text" placeholder="Digite o cargo do colaborador..."><br>
           
-            <label for="valor">Valor R$</label><br>
-            <input type="text" id="valor" name="valor" placeholder="Digite o valor do produto..."><br>
+            <label for="valor">Salário</label><br>
+            <input type="text" placeholder="Digite o salário do colaborador..."><br>
 
-            <label for="qtd">Quantidade em Estoque</label><br>
-            <input type="text" id="qtd" name="qtd" placeholder="Digite a quantidade disponível..."><br>
+            <label for="qtd">Data de contratação</label><br>
+            <input type="text" placeholder="Digite a data da contratação do colaborador..."><br>
 
             <input type="submit" value="Editar" id="btnIncluir" onclick="editProd()">
         </form>
@@ -63,12 +63,12 @@
     </footer>
 
     <script type="text/javascript">
-    	function returnEstoque() {
-    		window.location.href = "estoque.html";
+    	function returnFuncionarios() {
+    		window.location.href = "funcionarios.html";
     	}
 
     	function editProd() {
-    		alert("Produto alterado");
+    		alert("Colaborador alterado");
     	}
     </script>
 

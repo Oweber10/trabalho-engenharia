@@ -11,21 +11,29 @@
 </head>
 <body>
     <div class="containerHeader">
-        <header>
-            <center><img src="images\undergroundLogo.jpg" id="logo"></center>
+        <center><img src="images\undergroundLogo.jpg" id="logo"></center>
+        <header class="headerCliente">
             <nav>
                 <ul>
-                    <li><a href="estoque.html">ESTOQUE</a></li>
-                    <li><a href="funcionarios.html">FUNCIONÁRIOS</a></li>
-                    <li><a href="sobre.html">SOBRE NÓS</a></li>
-                    <li><a href="index.html">PRODUTOS</a></li>
-                    <li><a href="vendas.html"><img src="images\shopping-cart.png" id="carrinho"></a><div id="contProd">0</div></li>
+                    <li><a href="sobreADM.html">SOBRE NÓS</a></li>
+                    <li><a href="indexADM.html">PRODUTOS</a></li>
+                    <li><a href="controleADM.html">ADMINISTRAÇÃO</a><img src="images\open-padlock.png" id="imgCadeado"></li>
+                </ul>
+            </nav>
+            <nav>
+                <ul>
+                    <li><a href="vendasADM.html"><img src="images\shopping-cart.png" id="carrinho"></a><div id="contProd">0</div></li>
+                    <li><a href="perfilADM.html"><img src="images\user.png" id="imgUser"></a></li>
+                    <li><a href="index.html">Sair</a></li>
                 </ul>
             </nav>
         </header>
     </div>
 
-    <div class="tableFuncionarios">
+    <div class="containerForm">
+        <div class="tableFuncionarios">
+        <button onclick="location.replace('controleADM.html');" class="returnBtn">Voltar</button>
+        
         <h2>Lista de Funcionários</h2>
         <label>Filtrar</label><br>
         <input type="text"placeholder="Digine o nome do funcionário para buscar"><br>
@@ -82,7 +90,6 @@
         </table>
     </div>
 
-    <div class="containerForm">
         <h2>Inclusão de Funcionário na tabela</h2>
         <form>
             <label for="func">Nome</label><br>
@@ -117,7 +124,7 @@
         }
 
         function editarFunc() {
-            window.location.href = "edicao.html";
+            window.location.href = "edicaoFuncionarios.html";
         }
         
         function includeFunc() {

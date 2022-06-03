@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
 	<meta charset="UTF-8">
     <link href="style.css" rel="stylesheet">
@@ -10,7 +10,6 @@
 	<title>Underground Instrumentos Musicais</title>
 </head>
 <body>
-
 	<div class="containerHeader">
         <center><img src="images\undergroundLogo.jpg" id="logo"></center>
         <header class="headerCliente">
@@ -31,27 +30,30 @@
         </header>
     </div>
 
-	<div class="containerForm">
-		<button onclick="returnEstoque()" class="returnBtn">Voltar</button>
+    <div class="containerForm">
+        <h2>A Undeground</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
 
-        <h2>Edição de Produto na tabela</h2>
-        <form>
-            <label for="prod">Modelo</label><br>
-            <input type="text" id="prod" name="produto" placeholder="Digite o instrumento e modelo..."><br>
-
-            <label for="marca">Marca</label><br>
-            <input type="text" id="marca" name="marca" placeholder="Digite a marca do produto..."><br>
-          
-            <label for="valor">Valor R$</label><br>
-            <input type="text" id="valor" name="valor" placeholder="Digite o valor do produto..."><br>
-
-            <label for="qtd">Quantidade em Estoque</label><br>
-            <input type="text" id="qtd" name="qtd" placeholder="Digite a quantidade disponível..."><br>
-
-            <input type="submit" value="Editar" id="btnIncluir" onclick="editProd()">
-        </form>
+        <h2>Sobre Nós</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+        consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+        cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+        proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
-
+    
     <footer>
         <div id="containerFooter">
             <img src="images\undergroundLogo.jpg" id="logoFooter">
@@ -61,16 +63,6 @@
             </center>         
         </div>
     </footer>
-
-    <script type="text/javascript">
-    	function returnEstoque() {
-    		window.location.href = "estoque.html";
-    	}
-
-    	function editProd() {
-    		alert("Produto alterado");
-    	}
-    </script>
 
 </body>
 </html>

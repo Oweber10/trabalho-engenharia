@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UNDERGROUND INSTRUMENTOS</title>
+    <meta charset="UTF-8">
+    <link href="login.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images\electric-guitar.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+
+    <div id="containerLogin">
+      <img src="images\show.jpg" width="100%">
+
+      <div id="cadastro">
+        <center>
+          <a href="index.html"><img src="images\electric-guitar.png" width="10%"></a>
+          <h1>Crie sua conta Underground</h1>
+        </center>
+        
+        <center>
+          <label>Digite seu nome</label>
+          <input type="text" placeholder="John of the Silva"><br>
+          <label>Digite sua cidade</label>
+          <input type="text" placeholder="Chapecó"><br>
+          <label>Digite seu estado</label>
+          <input type="text" placeholder="SC"><br>
+          <label>Digite o endereço</label>
+          <input type="text" placeholder="Av. Getúlio Vargas, 540-D"><br>
+          <label>Digite seu e-mail</label>
+          <input type="email" placeholder="eu@gmail.com" id="email"><br>
+          <label>Digite sua Senha</label>
+          <input type="password" placeholder="Senha">
+          <input type="submit" value="Criar" onclick="create()">
+        </center>
+    </div>
+    
+    <script type="text/javascript">
+      function create() {
+        alert("Parabéns! Conta criada!");
+        location.replace("indexCliente.html");
+      }
+    </script>
+    
+  </body>
+</html>

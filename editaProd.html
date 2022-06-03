@@ -14,7 +14,7 @@
 	<div class="containerHeader">
         <header>
             <center><img src="images\undergroundLogo.jpg" id="logo"></center>
-            <nav>
+            <nav class="navLogOut">
                 <ul>
                     <li><a href="estoque.html">ESTOQUE</a></li>
                     <li><a href="sobre.html">SOBRE NÓS</a></li>
@@ -26,7 +26,7 @@
     </div>
 
 	<div class="containerForm">
-		<button onclick="returnEstoque()" class="returnBtn">Voltar</button>
+		<button onclick="returnProd()" class="returnBtn">Voltar</button>
 
         <h2>Editar Detalhes do Produto</h2>
         <form>
@@ -61,13 +61,13 @@
     </footer>
 
     <script type="text/javascript">
-    	function returnEstoque() {
-    		window.location.href = "estoque.html";
+    	function returnProd() {
+    		location.replace("pianoADM.html");
     	}
 
-    	function editProd() {
-    		alert("Produto alterado");
-    	}
+        function editProd() {
+            alert("Produto editado");
+        }
     </script>
 
 </body>
